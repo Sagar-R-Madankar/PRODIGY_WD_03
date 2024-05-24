@@ -15,7 +15,8 @@ This is a simple web-based tic-tac-toe game built using HTML, CSS, and JavaScrip
 3. Select single player or two player. 
 4. Click on a grid cell to place your mark.
 5. Continue playing until there's a winner or the game ends in a draw.
-6. To stop the game use Reset Button and to start the new game click on New Game Button.
+6. To stop the game use Stop Button and then to start the new game click on New Game Button ans select the players option to play.
+
 
 ## Technologies Used
 
