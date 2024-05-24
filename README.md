@@ -12,9 +12,10 @@ This is a simple web-based tic-tac-toe game built using HTML, CSS, and JavaScrip
 
 1. Clone or download the repository to your local machine.
 2. Open the `index.html` file in your web browser.
-3. Click on a grid cell to place your mark.
-4. Continue playing until there's a winner or the game ends in a draw.
-5. To start a new game, click the "Reset" button.
+3. Select single player or two player. 
+4. Click on a grid cell to place your mark.
+5. Continue playing until there's a winner or the game ends in a draw.
+6. To stop the game use Reset Button and to start the new game click on New Game Button.
 
 ## Technologies Used
 
