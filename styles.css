@@ -1,0 +1,152 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #960492, #feb47b);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    background: #ff7e5f;
+    background: linear-gradient(to left, #960492, #feb47b);
+    padding: 5px 0;
+    text-align: center;
+    box-shadow: 0 400px 600px rgba(88, 1, 1, 0.1);
+  
+}
+
+nav h1 {
+    margin: 0;
+    color: rgb(43, 38, 54);
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: cursive;
+
+}
+
+#game-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#game-mode {
+    margin-bottom: 20px;
+}
+
+#game-mode button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: cursive;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0b4783;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#game-mode button:hover {
+    background-color: #33026b;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 15px;
+    font-size: 2em;
+    font-family: cursive;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+#status {
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#reset-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: cursive;
+    border: none;
+    border-radius: 10px;
+    background-color: #0b4783;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#new-game-button{
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: cursive;
+    border: none;
+    border-radius: 10px;
+    background-color: #0b4783;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-button:hover {
+    background-color: #33026b;
+}
+#new-game-button:hover{
+    background-color: #33026b;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px; 
+}
+
+#game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: moveTitle 3s linear infinite alternate, changeColor 2s linear infinite alternate;
+}
+
+@keyframes moveTitle {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(230x);
+    }
+}
+
+@keyframes changeColor {
+    0%, 50% {
+        color: rgb(4, 17, 69);
+    }
+    50%, 100% {
+        color: rgb(209, 209, 212);
+    }
+}
